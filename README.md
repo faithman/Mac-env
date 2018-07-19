@@ -1,3 +1,3 @@
-s# andersen-lab
+# Mac-env
 
-[documentation](http://andersenlab.org/dry-guide/quest-andersen-lab-env/)
+Setting up the environment for MacOS using conda and pyenv, this is a copy from [AndersenLab/andersen-lab-env](https://github.com/AndersenLab/andersen-lab-env).
