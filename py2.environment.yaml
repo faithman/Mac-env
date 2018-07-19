@@ -1,0 +1,26 @@
+name: py2
+channels:
+- bioconda
+- biobuilds
+- conda-forge
+- defaults
+dependencies:
+- cython
+- delly
+- numpy
+- awscli
+- samtools
+- pybedtools
+- pysam
+- svdb
+- svtools
+- lumpy-sv
+- svtools
+- gsort
+- svtyper
+- python=2.7.14
+- pip:
+  - vcf-kit
+  - gsutil
+prefix: /usr/local/var/pyenv/versions/miniconda3-4.3.27/envs/vcf-kit
+
