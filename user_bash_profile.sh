@@ -6,9 +6,10 @@ alias trf="/usr/local/bin/trf409.macosx"
 
 export HOMEBREW_EDITOR=nano
 export PS1='\[\e[0;35m\][\h::\w] 😱 \[\e[m\] '
-export PATH="$HOME/.linuxbrew/bin:~/google-cloud-sdk/bin:$PYENV_ROOT/bin:$PATH:/Users/yewang/Documents/repo/HipSTR:$PATH"
+export PATH="$HOME/.linuxbrew/bin:/usr/bin:~/google-cloud-sdk/bin:$PATH"
 export MANPATH="$(brew --prefix)/share/man:$MANPATH"
 export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
+export CLOUDSDK_PYTHON="/usr/bin/python2.7"
 
 export CLICOLOR=1
 export LS_COLOR="di=01:fi=00;1:*.php=00;34"
@@ -27,4 +28,8 @@ rm_gw() {
 
 # Autojump config
 [ -f "/home/$(whoami)/.linuxbrew/etc/profile.d/autojump.sh" ] && . "/home/$(whoami)/.linuxbrew/etc/profile.d/autojump.sh"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/yewang/repo/google-cloud-sdk/path.bash.inc' ]; then source '/Users/yewang/repo/google-cloud-sdk/path.bash.inc'; fi
 
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/yewang/repo/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/yewang/repo/google-cloud-sdk/completion.bash.inc'; fi
