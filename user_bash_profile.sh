@@ -1,4 +1,9 @@
 #!/bin/bash
+
+alias hk="ssh ubuntu@18.191.137.240"
+alias quest="ssh ywq9361@quest.it.northwestern.edu"
+alias trf="/usr/local/bin/trf409.macosx"
+
 export HOMEBREW_EDITOR=nano
 export PS1='\[\e[0;35m\][\h::\w] 😱 \[\e[m\] '
 export PATH="$HOME/.linuxbrew/bin:~/google-cloud-sdk/bin:$PATH"
